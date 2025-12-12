@@ -21,3 +21,5 @@ const newUser: User = [1, "john"] // using the tuple type
 newUser.push(2) // valid but not recommended, tuples are meant to have fixed length
 
 export {}
+
+// * 2:14:34 
