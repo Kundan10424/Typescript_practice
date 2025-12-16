@@ -22,5 +22,4 @@ class Instagram1 extends TakePhoto {
     }
 }
 const photo = new Instagram1("rear", "winter", 5);
-//* 3:35:40
 //# sourceMappingURL=abstract.js.map
