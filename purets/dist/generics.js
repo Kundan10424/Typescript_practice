@@ -16,4 +16,5 @@ function identity4(val) {
 }
 identity4("Hello");
 identity4({ brand: "Pepsi", type: "Plastic" });
+//* 03: 48
 //# sourceMappingURL=generics.js.map

@@ -28,3 +28,5 @@ interface Bottle{
 }
 
 identity4<Bottle>({brand: "Pepsi", type: "Plastic"})
+
+//* 03: 48
