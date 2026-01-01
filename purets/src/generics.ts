@@ -29,4 +29,46 @@ interface Bottle{
 
 identity4<Bottle>({brand: "Pepsi", type: "Plastic"})
 
-//* 03: 48
+function getSearchProducts<T>(products: T[]): T | undefined {
+    // do some database operations
+    const myIndex = 3
+    return products[myIndex]
+}
+
+const getMoreSearchProducts = <T>(products: T[]): T | undefined => {
+    // do some database operations
+    const myIndex = 4
+    return products[myIndex]
+}
+
+interface Database{
+    connection: string,
+    username: string,
+    password: string
+}
+
+function anotherFunction<T, U extends Database>(val1: T, val2: U): object{
+    return{
+        val1, 
+        val2
+    }
+}
+
+interface Quiz{
+    name: string,
+    type: string
+}
+
+interface Course{
+    name: string,
+    author: string,
+    subject: string
+}
+
+class Sellable<T>{
+    public cart: T[] = []
+
+    addtoCart(product: T){
+        this.cart.push(product)
+    }
+}
